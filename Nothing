@@ -1,0 +1,37 @@
+Column Name 	  Missing values                  
+Loan_ID  	  0
+Gender  	  13
+Married  	  3
+Dependents  	  15
+Education  	  0
+Self_Employed  	  32
+ApplicantIncome  	  0
+CoapplicantIncome  	  0
+LoanAmount  	  22
+Loan_Amount_Term  	  14
+Credit_History  	  50
+Property_Area  	  0
+Loan_Status  	  0
+
+
+
+print "Column Name \t  Missing values"
+
+for i in test.columns:
+
+    print i," \t ",test[i].shape[0] - test[i].dropna().shape[0]
+
+Column Name 	  Missing values
+Loan_ID  	  0
+Gender  	  11
+Married  	  0
+Dependents  	  10
+Education  	  0
+Self_Employed  	  23
+ApplicantIncome  	  0
+CoapplicantIncome  	  0
+LoanAmount  	  5
+Loan_Amount_Term  	  6
+Credit_History  	  29
+Property_Area  	  0
+66665666
